@@ -1,0 +1,20 @@
+{
+  "name": "cypress-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "serve ./src --listen 8080",
+    "e2e": "cypress run --headed",
+    "movie": "cypress-movie --fps 1",
+    "start": "start-server-and-test server http://localhost:8080 e2e"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^8.1.0",
+    "cypress-movie": "^3.0.14",
+    "serve": "^12.0.0",
+    "start-server-and-test": "^1.13.1"
+  }
+}

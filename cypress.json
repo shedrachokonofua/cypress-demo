@@ -1,0 +1,15 @@
+{
+  "videoCompression": false,
+  "nodeVersion": "system",
+  "env": {
+    "cypress-movie": {
+      "enabled": true,
+      "cursorTracking": {
+        "enabled": true,
+        "shape": "dot"
+      },
+      "width": 1920,
+      "height": 1080
+    }
+  }
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thanks</title>
+</head>
+<body>
+  <h1>Thank You!</h1>
+  <h2>Here's what you submitted:</h2>
+  <div id="results">
+    <p><b>Name:</b> <span id="name"></span></p>
+    <p><b>Email:</b> <span id="email"></span></p>
+    <p><b>Message:</b> <span id="message"></span></p>
+  </div>
+  <p>We'll get back to you shortly!</p>
+
+  <script>
+    const urlSearchParams = new URLSearchParams(window.location.search);
+    const params = Object.fromEntries(urlSearchParams.entries());
+    const setValue = (key, value) => document.getElementById(key).innerHTML = value;
+    setValue('name', params.name);
+    setValue('email', params.email);
+    setValue('message', params.message);
+  </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact-Us</title>
+  <style>
+    label, input, textarea { 
+      display: block;
+    }
+    input, textarea {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Contact Us</h1>
+  <form action="/thanks" method="GET">
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" placeholder="Name">
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" placeholder="Email">
+    <label for="message">Message:</label>
+    <textarea name="message" id="message" placeholder="Message"></textarea>
+    <input type="submit" value="Submit" id="submit">
+  </form>
+</body>
+</html>
